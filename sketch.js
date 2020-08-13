@@ -67,7 +67,7 @@ function feeddog(){
   dog.addImage(dogimg);
  
   foodobj.updatefoodstock(foodobj.getfoodstock()-1);
-  foodobj.detuctfood();
+  //foodobj.detuctfood();
   database.ref('/').update({
     food:foodobj.getfoodstock(),
     feedtime:hour()
